@@ -1,0 +1,91 @@
+/* index.css */
+
+/* Base Styles */
+.form-container {
+  max-width: 600px;
+  margin: 32px auto; /* Changed to pixels */
+  padding: 32px; /* Changed to pixels */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 16px; /* Changed to pixels */
+  font-size: 24px; /* Changed to pixels */
+}
+
+.form-group {
+  margin-bottom: 24px; /* Changed to pixels */
+}
+
+.form-input, .form-textarea, select {
+  width: 100%;
+  padding: 12px; /* Changed to pixels */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Changed to pixels */
+}
+
+.form-textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 12px; /* Changed to pixels */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px; /* Changed to pixels */
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.form-error {
+  color: red;
+  margin-bottom: 16px; /* Changed to pixels */
+  text-align: center;
+  font-size: 14px; /* Changed to pixels */
+}
+
+.loading {
+  text-align: center;
+  margin-top: 32px; /* Changed to pixels */
+  font-size: 20px; /* Changed to pixels */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 24px; /* Changed to pixels */
+  }
+
+  .form-title {
+    font-size: 20px; /* Changed to pixels */
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    margin: 16px; /* Changed to pixels */
+    padding: 16px; /* Changed to pixels */
+  }
+
+  .form-title {
+    font-size: 18px; /* Changed to pixels */
+  }
+
+  .form-input, .form-textarea, select {
+    font-size: 14px; /* Changed to pixels */
+  }
+}
