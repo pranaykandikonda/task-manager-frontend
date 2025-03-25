@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { MdNotificationsActive } from 'react-icons/md';
+import { API_BASE_URL } from "../../config";
 import './index.css';
 
 class Dashboard extends Component {
@@ -11,7 +12,7 @@ class Dashboard extends Component {
 
   componentDidMount() {
     // Fetch task statistics
-    fetch('/api/stats', {
+    fetch(`${API_BASE_URL}/api/stats`, {
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('token')}`
       }

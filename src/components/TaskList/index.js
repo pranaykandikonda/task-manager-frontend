@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from '../../withRouter';
+import { API_BASE_URL } from "../../config";
 import './index.css';
 
 class TaskList extends Component {
@@ -33,7 +34,7 @@ class TaskList extends Component {
         return;
       }
   
-      const response = await fetch(`/api/tasks?${new URLSearchParams({
+      const response = await fetch(`${API_BASE_URL}/api/tasks?${new URLSearchParams({
         search: searchQuery,
         category: categoryFilter,
         status: statusFilter
@@ -63,7 +64,7 @@ class TaskList extends Component {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`/api/tasks/${id}`, {
+      const response = await fetch(`${API_BASE_URL}/api/tasks/${id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`

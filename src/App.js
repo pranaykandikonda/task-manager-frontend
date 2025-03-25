@@ -8,7 +8,7 @@ import TaskList from './components/TaskList';
 import AddTask from './components/AddTask';
 import EditTask from './components/EditTask';
 import './App.css';
-import { withRouter } from './withRouter'; // make sure the path is correct
+import { withRouter } from './withRouter';
 
 class App extends Component {
   state = {
